@@ -4,7 +4,7 @@ public class Audio {
     private String title;
     private int totalReproductions;
     private int totalLikes;
-    private double rating;
+    private int rating;
 
     public void likeIt() {
         this.totalLikes++;
@@ -30,7 +30,7 @@ public class Audio {
         return totalLikes;
     }
 
-    public double getRating() {
+    public int getRating() {
         return rating;
     }
 }
