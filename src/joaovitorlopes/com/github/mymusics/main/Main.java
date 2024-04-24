@@ -1,6 +1,7 @@
 package joaovitorlopes.com.github.mymusics.main;
 
 import joaovitorlopes.com.github.mymusics.models.Music;
+import joaovitorlopes.com.github.mymusics.models.MyPreferences;
 import joaovitorlopes.com.github.mymusics.models.Podcast;
 
 public class Main {
@@ -28,5 +29,9 @@ public class Main {
         for (int i = 0; i < 1000; i++) {
             myPodcast.likeIt();
         }
+
+        MyPreferences preferences = new MyPreferences();
+        preferences.include(myPodcast);
+        preferences.include(myMusic);
     }
 }
